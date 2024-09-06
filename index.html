@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+        }
+        .sidebar {
+            background-color: #f4f4f4;
+            width: 200px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .content {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .card {
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            flex: 1 1 200px; 
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Dashboard Header</div>
+        <div class="main">
+            <div class="sidebar">
+                <div>Menu Item 1</div>
+                <div>Menu Item 2</div>
+                <div>Menu Item 3</div>
+            </div>
+            <div class="content">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+                <div class="card">Card 4</div>
+            </div>
+        </div>
+        <div class="footer">Dashboard Footer</div>
+    </div>
+</body>
+</html>
